@@ -1,0 +1,26 @@
+<annotation>
+	<folder>black_hijiki_S_real_1</folder>
+	<filename>black_hijiki_S_real_1_309.jpg</filename>
+	<path>/Users/kazuki-o/Desktop/アノテーション/black_hijiki_S_real_1/black_hijiki_S_real_1_309.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>426</width>
+		<height>426</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>black_hijiki</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>173</xmin>
+			<ymin>178</ymin>
+			<xmax>373</xmax>
+			<ymax>406</ymax>
+		</bndbox>
+	</object>
+</annotation>

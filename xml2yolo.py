@@ -74,21 +74,21 @@ addxmlpath = parentpath + 'traffic_label/201702071403' #"Directory path with XML
 addimgpath = parentpath + 'traffic_img/201702071403' #"Directory path with IMG files"
 outputpath = parentpath + 'traffic_format4yolo' #"output folder for yolo format"
 classes_txt = './traffic_classes.txt' #"File containing classes"
-ext = '.png' #"Image file extension [.jpg or .png]"
+ext = '.jpg' #"Image file extension [.jpg or .png]"
 
 
 if os.path.isfile(classes_txt):
     with open(classes_txt, "r") as f:
         class_list = f.read().strip().split()
         classes = {k : v for (v, k) in enumerate(class_list)}
-
+print(classes)
 xmlPaths = glob(addxmlpath + "/*.xml")
 #imgPaths = glob(addimgpath + "/*"+ext)
 
 for xmlPath in xmlPaths:
     tVocParseReader = PascalVocReader(xmlPath)
     shapes = tVocParseReader.getShapes()
-
+    print(os.path.basename(xmlPath)[:-4])
     with open(outputpath + "/" + os.path.basename(xmlPath)[:-4] + ".txt", "w") as f:
         for shape in shapes:
             class_name = shape[0]
@@ -100,7 +100,8 @@ for xmlPath in xmlPaths:
                 classes[class_name] = num_classes
                 num_classes += 1
             class_idx = classes[class_name]
-
+            
+            print(filename)
             (height, width, _) = cv2.imread(filename).shape
 
             coord_min = box[0]

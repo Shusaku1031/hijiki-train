@@ -1,0 +1,26 @@
+<annotation>
+	<folder>white_chinese-yam_S_real_1</folder>
+	<filename>white_chinese-yam_S_real_1_583.jpg</filename>
+	<path>/Users/kazuki-o/Desktop/アノテーション/white_chinese-yam_S_real_1/white_chinese-yam_S_real_1_583.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>426</width>
+		<height>426</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>white_chinese-yam</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>180</xmin>
+			<ymin>117</ymin>
+			<xmax>335</xmax>
+			<ymax>397</ymax>
+		</bndbox>
+	</object>
+</annotation>
